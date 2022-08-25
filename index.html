@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <form>
+            <div id="button">
+                <input type="button"  onclick="connect()" value="接続"/>
+                <input type="button"  onclick="send_message('実行')" value="実行"/>
+                <input type="button"  onclick="disconnectWebSocket()" value="切断"/>
+            </div>
+            <div id="txt">
+                <input type="text" id="_message" value="接続前" readonly/>
+            </div>
+            <script type="text/javascript" src="./js/WebSocketSample.js"></script>
+        </form>
+    </body>
+</html>
